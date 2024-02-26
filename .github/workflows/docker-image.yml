@@ -15,7 +15,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t your-image-name .
+        docker build -t React .
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
         docker tag your-image-name your-docker-username/your-image-name
         docker push your-docker-username/your-image-name
